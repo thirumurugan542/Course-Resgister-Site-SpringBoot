@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Resgiter a course</title>
+        <style>
+            body{
+                background-color: black;
+                text-align: center;
+            }
+            form{
+                margin: auto;
+                padding: 20px;
+                width: 400px;
+                background-color: gainsboro;
+            }
+            input,select,button{
+                width: 90%;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 15px;
+                box-shadow: 0 6px 18px rgb(73, 70, 70);
+            }
+            button{
+                background-color:cadetblue;
+                color: white;
+                font-weight:bold;
+                font-size:medium ;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: rgba(12, 73, 66, 0.59);
+            }
+        </style>
+
+    </head>
+    <body>
+        <h2 style="color: khaki;">Register Our exciting courses</h2>
+        <form action="http://localhost:8080/course/register" method="post">
+            <label for="name">Enter Your Name</label><br>
+            <input type="text" name="name"><br><br>
+            <label for="email">Enter Your EmailId</label><br>
+            <input type="email" name="emailId"><br><br>
+            <label for="course">choose a course</label><br>
+            <select id="course" name="courseName">
+                <option value="Java Basics">Java Basics</option>
+                <option value="Python Basics">Python Basics</option>
+                <option value="Block Chain">Block Chain</option>
+            </select>
+            <br><br>
+            <button type="submit">submit</button>
+
+            
+        </form>
+
+
+    </body>
+</html>

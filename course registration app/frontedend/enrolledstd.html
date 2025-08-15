@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Enrolled students</title>
+        <script type="text/javascript" src="availablecrs.js"></script>
+    <style>
+        td{
+            background-color: aliceblue;
+        }
+        body{
+            padding: 50px;
+        }
+    </style>
+    </head>
+    <body>
+        <table align="center" border="1" style="background-color: black;">
+            <tr align="center" style="background-color: lightblue;">
+                <th width="150">Name</th>
+                <th width="250">Email Id</th>
+                <th width="200">Course Name</th>
+                
+            </tr>
+            <tbody align="center" id="enrolledusers"></tbody>
+        </table>
+
+        <script type="text/javascript">
+            window.onload = function(){
+                showenrolledusers();
+            }
+        </script>
+    </body>
+</html>

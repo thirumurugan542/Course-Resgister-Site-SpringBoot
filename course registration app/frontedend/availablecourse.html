@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Available courses</title>
+        <script type="text/javascript" src="availablecrs.js"></script>
+    <style>
+        td{
+            background-color: aliceblue;
+        }
+        body{
+            padding: 50px;
+        }
+    </style>
+    </head>
+    <body>
+        <table align="center" border="1" style="background-color: black;">
+            <tr align="center" style="background-color: lightblue;">
+                <th width="100">courseId</th>
+                <th width="150">courseName</th>
+                <th width="140">duration</th>
+                <th width="150">trainer</th>
+            </tr>
+            <tbody align="center" id="courseTable"></tbody>
+        </table>
+
+        <script type="text/javascript">
+            window.onload = function(){
+                showCourses();
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+nav h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Main Box */
+.box {
+    background-color: white;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Button container */
+.object {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.object a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Buttons */
+button {
+    background: #008080;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #004f4f;
+    transform: scale(1.05);
+}
+
+/* About Us Section */
+.about {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    border-left: 8px solid #008080;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.about h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #222;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .box, .about, nav {
+        padding: 20px;
+        width: 95%;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .object {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
